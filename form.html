@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Form</title>
+</head>
+<body style="padding: 20px;">
+    <fieldset>
+        <legend>Name and Address</legend>
+        <form>
+            <!-- Asking About CiviCRM -->
+          <div style="margin-bottom: 10px;">
+            <label style="display: inline-block; width: 300px;">Do you use CiviCRM?</label>
+            <input type="radio" name="rd-btn" value="yes"> Yes
+            <input type="radio" name="rd-btn" value="no"> No
+          </div>  
+          <!-- About Using CiviCRM -->
+          <div style="margin-bottom: 10px;">
+            <label style="display: inline-block; width: 300px;">How long have you been using CiviCRM?</label>
+          <select style="width: 100px;">
+            <option value="">- Select -</option>
+            <option value="less than 1 year">Less than 1 one year</option>
+            <option value="1_to_3">1 to 3 year</option>
+            <option value="3_to_5">3 to 5 year</option>
+            <option value="more than 5">More than 5 year</option>
+          </select style="width: 150px;"> 
+        </div>
+        <!-- About CMS -->
+        <div style="margin-bottom: 10px;">
+        <label style="display: inline-block; width: 300px;"> Which CMS do you use?</label>
+        <select style="width: 100px;">
+            <option value="">- select -</option>
+            <option value="Drupal">Drupal</option>
+            <option value="WordPress">WordPress</option>
+            <option value="Joomla">Joomla</option>
+            <option value="other_cms">Other Cms</option>
+          </select>
+          </div>
+          <!-- Skill Set -->
+          <div style="margin-bottom: 10px;">
+            <label style="display: inline-block; width: 300px;"> Your skil set </label>
+            <select style="width: 100px;">
+              <option value=""> -Select- </option>
+              <option value="developer">Developer</option>
+              <option value="administrator">Administrator</option>
+              <option value="user">Designer</option>
+              <option value="other_skill">Other</option>
+            </select>
+          </div>
+          <!-- Email and Name Inputs -->
+           <div > 
+            <div style="margin-bottom: 10px;">   <!-- Email Input-->
+              <label style="display: inline-block; width: 300px;" for="email">Email *</label>
+              <input type="email" id="email" name="email" required style="width: 250px;">
+            </div> 
+            <div style="margin-bottom: 10px;">  <!-- First Name-->
+              <label style="display: inline-block; width: 300px;" for="first_name">First Name *</label>
+              <input type="text" id="first_name" name="first_name" required style="width: 250px;">
+            </div>
+            <div style="margin-bottom: 10px;">  <!-- First Name-->
+              <label style="display: inline-block; width: 300px;" for="Last_name">Last Name *</label>
+              <input type="text" id="Last_name" name="Last_name" required style=" width: 250px;">
+            </div>
+              <p style="margin-left: 300px;">First and last name will be shared with other visitors to the site.</p>
+            </div>
+            <!-- Home Adress-->
+            <div style="margin-bottom: 10px;">
+              <label style="display: inline-block; width: 300px;" for="street_address">Street Address (Home)</label>
+              <input type="text" id="street_address" name="street_address" style="width: 250px;">
+            </div>
+            <!-- City Input -->
+            <div style="margin-bottom: 10px;">
+              <label style="display: inline-block; width: 300px;" for="city">City (Home)</label>
+              <input type="text" id="city" name="city" style="width: 250px;">
+            </div>
+            <!-- Postal  Code Input -->
+            <div style="margin-bottom: 10px;">
+              <label style="display: inline-block; width: 300px;" for="postal_code">Postal Code (Home)</label>
+              <input type="text" id="postal_code" name="postal_code" style="width: 100px;">
+            </div>
+            <!-- Country Input -->
+            <div style="margin-bottom: 10px;">
+              <label style="display: inline-block; width: 300px;">Country (Home)</label>
+              <select style="width: 100px;">
+                <option value=""> -Select- </option>
+                <option value="pakistan">Pakistan</option>
+                <option value="india">India</option>
+                <option value="china">China</option>
+              </select>
+              <p style="margin-left: 300px;">Your state/province and country of residence will be shared with others so folks can find others in their community.</p>
+            </div>
+            <div style="margin-bottom: 10px;">
+              <label style="display: inline-block; width: 300px;" for="state">State (Home)</label>
+              <select id="state" style="width: 150px;">
+                <option value="">- select -</option>
+              </select>
+            </div>
+        </form>
+    </fieldset>
+    <div>
+      <button style="margin: 10px;" type="submit">Save</button>
+      <button type="button">Cancel</button>
+    </div>
+</body>
+</html>
